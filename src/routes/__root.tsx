@@ -77,21 +77,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Greek AI Olympiad — Προετοιμασία για τον ΠΔΤΝ" },
+      {
+        name: "description",
+        content:
+          "Ανεξάρτητη εκπαιδευτική πρωτοβουλία για την προετοιμασία μαθητών λυκείου στον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης.",
+      },
+      { property: "og:title", content: "Greek AI Olympiad" },
+      {
+        property: "og:description",
+        content:
+          "Προετοιμασία μαθητών λυκείου για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Greek AI Olympiad" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Greek AI Olympiad" },
+      {
+        name: "twitter:description",
+        content:
+          "Προετοιμασία μαθητών λυκείου για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης.",
+      },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,
