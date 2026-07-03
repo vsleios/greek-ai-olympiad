@@ -4,7 +4,7 @@ const links = [
   { href: "#pdtn", label: "Τι είναι ο ΠΔΤΝ;" },
   { href: "#about", label: "Ποιός είμαι;" },
   { href: "#faq", label: "FAQ" },
-  { href: "#contact", label: "Επικοινωνία" },
+  { href: "#motivation", label: "Το κίνητρο" },
 ];
 
 export function Navbar() {
@@ -49,15 +49,6 @@ export function Navbar() {
             </li>
           ))}
         </ul>
-
-        <div className="hidden md:block">
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Εκδήλωση ενδιαφέροντος
-          </a>
-        </div>
 
         <button
           type="button"
@@ -108,15 +99,6 @@ export function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="pt-2">
-              <a
-                href="#contact"
-                onClick={() => setOpen(false)}
-                className="inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-              >
-                Εκδήλωση ενδιαφέροντος
-              </a>
-            </li>
           </ul>
         </div>
       )}
