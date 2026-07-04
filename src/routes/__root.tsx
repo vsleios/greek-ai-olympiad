@@ -81,22 +81,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Ανεξάρτητη εκπαιδευτική πρωτοβουλία για την προετοιμασία μαθητών λυκείου στον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης.",
+          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
       },
       { property: "og:title", content: "Greek AI Olympiad" },
       {
         property: "og:description",
         content:
-          "Προετοιμασία μαθητών λυκείου για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Greek AI Olympiad" },
+      { property: "og:url", content: "https://greekaiolympiad.gr" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Greek AI Olympiad" },
       {
         name: "twitter:description",
         content:
-          "Προετοιμασία μαθητών λυκείου για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης.",
+          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
       },
     ],
     links: [
@@ -122,7 +123,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="el">
       <head>
         <HeadContent />
       </head>
