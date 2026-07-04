@@ -77,30 +77,37 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Greek AI Olympiad — Προετοιμασία για τον ΠΔΤΝ" },
+      { title: "Greek AI Olympiad | Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης" },
       {
         name: "description",
         content:
-          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
+          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
+          Python και Machine Learning.`,
       },
       { property: "og:title", content: "Greek AI Olympiad" },
       {
         property: "og:description",
         content:
-          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
+          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
+          Python και Machine Learning.`,
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Greek AI Olympiad" },
-      { property: "og:url", content: "https://greekaiolympiad.gr" },
+      { property: "og:url", content: "https://www.greekaiolympiad.gr" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Greek AI Olympiad" },
       {
         name: "twitter:description",
         content:
-          "Μαθήματα προετοιμασίας μαθητών για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
+          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
+          Python και Machine Learning.`,
       },
     ],
     links: [
+      { rel: "canonical", href: "https://www.greekaiolympiad.gr" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
