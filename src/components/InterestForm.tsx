@@ -2,7 +2,7 @@ import { useState, type FormEvent } from "react";
 
 // Replace FORMSPREE_ENDPOINT later with a real Formspree URL, e.g.
 // "https://formspree.io/f/xxxxxx". Until then the form just simulates success.
-const FORMSPREE_ENDPOINT = "";
+const FORMSPREE_ENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT ?? "";
 
 export function InterestForm() {
   const [email, setEmail] = useState("");
