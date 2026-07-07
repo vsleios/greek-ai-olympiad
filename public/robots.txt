@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.greekaiolympiad.gr/sitemap.xml
