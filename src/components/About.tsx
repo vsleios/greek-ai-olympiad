@@ -3,17 +3,6 @@ import { Section } from "./Section";
 export function About() {
   return (
     <Section id="about" eyebrow="02 — Ο διδάσκων" title="Ποιός είμαι;">
-      {/* <p>
-        [Placeholder] Ονομάζομαι [Όνομα Επώνυμο] και εργάζομαι ως AI
-        Engineer. Έχω σπουδάσει [σχολή / πανεπιστήμιο] και ασχολούμαι
-        καθημερινά με εφαρμογές Μηχανικής Μάθησης σε παραγωγικά
-        περιβάλλοντα.
-      </p>
-      <p>
-        [Placeholder] Δεν είμαι φροντιστήριο και δεν είμαι εταιρεία. Είμαι
-        ένας μηχανικός που θέλει να δώσει σε μαθητές λυκείου την
-        προετοιμασία που ο ίδιος θα ήθελε να έχει όταν ήταν στη θέση τους.
-      </p> */}
 
       <ul className="list-disc space-y-3 pl-5">
         <li>
@@ -35,31 +24,15 @@ export function About() {
       </ul>
 
       <ul className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-sm">
-        {/* Placeholder social links — replace hrefs when ready */}
+        
         <li>
           <a
             href="https://www.linkedin.com/in/vasileios-toumpanakis-9619a8221/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground underline decoration-border underline-offset-4 transition-colors hover:text-foreground hover:decoration-primary"
+            className="text-muted-foreground no-underline decoration-border underline-offset-4 transition-colors hover:text-foreground hover:underline hover:decoration-primary"
           >
             Linkedin
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="text-muted-foreground underline decoration-border underline-offset-4 transition-colors hover:text-foreground hover:decoration-primary"
-          >
-            Youtube
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            className="text-muted-foreground underline decoration-border underline-offset-4 transition-colors hover:text-foreground hover:decoration-primary"
-          >
-            Προσωπικός ιστότοπος
           </a>
         </li>
       </ul>

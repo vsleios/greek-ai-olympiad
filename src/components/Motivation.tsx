@@ -4,7 +4,7 @@ export function Motivation() {
   return (
     <Section
       id="motivation"
-      eyebrow="03 — Το κίνητρο"
+      eyebrow="05 — Το κίνητρο"
       title="Γιατί δημιούργησα το Greek AI Olympiad;"
     >
       <p>

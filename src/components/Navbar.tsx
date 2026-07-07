@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 const links = [
   { href: "#pdtn", label: "Τι είναι ο ΠΔΤΝ;" },
   { href: "#about", label: "Ποιός είμαι;" },
+  { href: "#social", label: "Υλικό" },
   { href: "#faq", label: "FAQ" },
   { href: "#motivation", label: "Το κίνητρο" },
 ];

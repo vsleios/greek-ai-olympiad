@@ -1,13 +1,10 @@
 import { InterestForm } from "./InterestForm";
 
+
 export function Hero() {
   return (
     <section id="top" className="mx-auto max-w-5xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
       <div className="max-w-3xl">
-        {/* <p className="mb-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted-foreground">
-          <span className="inline-block h-px w-6 bg-border" aria-hidden="true" />
-          bla bla bla
-        </p> */}
 
         <h1 className="font-serif text-4xl leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
           Greek AI Olympiad
@@ -20,6 +17,7 @@ export function Hero() {
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
         Μικρά τμήματα • Online • Εξατομικευμένη καθοδήγηση
         </p>
+
 
 <div className="mt-14 space-y-4">
           {/* Box 1 — static contact info */}
@@ -36,7 +34,7 @@ export function Hero() {
               </a>
               {" "}ή στο{" "}
               <a
-                href="tel:+3069XXXXXXXX"
+                href="tel:+306982246872"
                 className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-primary"
               >
                 6982246872
