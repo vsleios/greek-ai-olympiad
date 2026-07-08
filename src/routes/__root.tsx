@@ -92,33 +92,45 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
-          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
-          Python και Machine Learning.`,
+        "Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης με μικρά online τμήματα, καθοδήγηση και πρακτική εξάσκηση σε Python και Machine Learning.",
       },
       { property: "og:title", content: "Greek AI Olympiad" },
       {
         property: "og:description",
         content:
-          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
-          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
-          Python και Machine Learning.`,
+          "Προετοιμασία για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης με μικρά online τμήματα, καθοδήγηση και πρακτική εξάσκηση.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Greek AI Olympiad" },
-      { property: "og:url", content: "https://www.greekaiolympiad.gr" },
+      { property: "og:url", content: "https://www.greekaiolympiad.gr/" },
+
+      { property: "og:image", content: "https://www.greekaiolympiad.gr/og.jpg" },
+      { property: "og:image:secure_url", content: "https://www.greekaiolympiad.gr/og.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content:
+          "Greek AI Olympiad - Προετοιμασία για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης",
+      },
+
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Greek AI Olympiad" },
       {
         name: "twitter:description",
         content:
-          `Μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης. 
-          Online μικρά τμήματα, εξατομικευμένη καθοδήγηση και πρακτική εξάσκηση σε 
-          Python και Machine Learning.`,
+        "Προετοιμασία για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης με μικρά online τμήματα, καθοδήγηση και πρακτική εξάσκηση.",
       },
+      { name: "twitter:image", content: "https://www.greekaiolympiad.gr/og.jpg" },
+      {
+        name: "twitter:image:alt",
+        content:
+          "Greek AI Olympiad - Προετοιμασία για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης",
+      },
+
     ],
     links: [
-      { rel: "canonical", href: "https://www.greekaiolympiad.gr" },
+      { rel: "canonical", href: "https://www.greekaiolympiad.gr/" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", sizes: "any" },
       { rel: "icon", href: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
@@ -143,11 +155,43 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 
+const organizationStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://www.greekaiolympiad.gr/#organization",
+  name: "Greek AI Olympiad",
+  url: "https://www.greekaiolympiad.gr/",
+  logo: "https://www.greekaiolympiad.gr/apple-touch-icon.png",
+  image: "https://www.greekaiolympiad.gr/og.jpg",
+  email: "greek.ai.olympiad@gmail.com",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "information",
+    email: "greek.ai.olympiad@gmail.com",
+  },
+  description:
+  "Ανεξάρτητη εκπαιδευτική πρωτοβουλία που προσφέρει μαθήματα προετοιμασίας για τον Πανελλήνιο Διαγωνισμό Τεχνητής Νοημοσύνης (ΠΔΤΝ).",
+  sameAs: [
+    "https://www.youtube.com/@GreekAIOlympiad",
+    "https://www.facebook.com/profile.php?id=61591892273878",
+    "https://www.instagram.com/greek.ai.olympiad/",
+  ],
+};
+
+
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="el">
       <head>
         <HeadContent />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationStructuredData),
+          }}
+        />
+
         {GA_ID ? (
           <>
             <script
